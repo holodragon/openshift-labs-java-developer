@@ -37,7 +37,14 @@
       "description": "Git source URI for application",
       "displayName": "Git source repository",
       "name": "GIT_URI",
-      "value": "https://github.com/openshift-roadshow/nationalparks.git",
+      "value": "https://github.com/holodragon/openshift-labs-java-developer.git",
+      "required": true
+    },
+    {
+      "description": "Git root folder for application build",
+      "displayName": "Git build folder",
+      "name": "GIT_CONTEXT_DIR",
+      "value": "nationalparks",
       "required": true
     },
     {
@@ -346,7 +353,8 @@
           "git": {
             "uri": "${GIT_URI}",
             "ref": "${GIT_REF}"
-          }
+          },
+          "contextDir": "${GIT_CONTEXT_DIR}"
         },
         "strategy": {
           "type": "Source",
