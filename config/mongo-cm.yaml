@@ -1,0 +1,12 @@
+apiVersion: v1
+data:
+  mongodb.database: mongodb
+  mongodb.host: mongodb
+  mongodb.username: mongodb
+kind: ConfigMap
+metadata:
+  creationTimestamp: 2019-07-05T07:47:19Z
+  name: mongodb-config
+  resourceVersion: "83904"
+  selfLink: /api/v1/namespaces/user29-map/configmaps/mongodb-config
+  uid: 1d9cd538-9ef9-11e9-bd45-024dca671c5c
